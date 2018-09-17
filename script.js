@@ -14,7 +14,13 @@ window.onload = function () {
         const loginSub = window.document.getElementById("loginForm");
         loginSub.addEventListener("submit", function (e) {
             e.preventDefault();
-            login();
+            if (!localStorage.profiles) {
+                login();
+            }else{
+                alert("No user accounts exist!")
+                window.location.href = "sign-up.html";
+            }
+            
         })
 
     } else if (location.pathname.includes("profile")) { //If profile page
