@@ -1,0 +1,65 @@
+body {
+    font-size: 1.5em;
+}
+
+input {
+    width: auto;
+    height: 25px;
+    font-size: .75em;
+    padding-left: 10px;
+}
+
+header iframe {
+    height: 70px;
+}
+
+.footer {
+    margin-top: 20px;
+  
+    /* This is how elements are fixed to the bottom of the screen */
+    bottom: 0px;
+    /* position: fixed; */
+}
+
+.footer-content {
+    font-size: .75em;
+    text-align: center;
+}
+
+.title {
+    color: #0099ff;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.content {
+    width: 40%;
+
+    /* This is how elements are centered */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    font-size: 1em;
+    width: 125px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    background-color: #0099ff;
+}
+
+.buttons input, a {
+    margin: 5px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 2em;
+    }
+}

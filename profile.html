@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyStory - Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" width="100%"></iframe>
+    </header>
+    <div class="container">
+        <section>
+            <h1 class="title">Profile</h1>
+            <!-- First Name -->
+            <div>
+                <label for="first-name">First Name:</label>
+                <span id="firstName"></span>
+            </div>
+            <!-- Last Name -->
+            <div>
+                <label for="first-name">Last Name:</label>
+                <span id="lastName"></span>
+            </div>
+            <!-- Alias -->
+            <div>
+                <label for="alias">Alias:</label>
+                <span id="alias"></span>
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <span id="email"></span>
+            </div>
+            <!-- Gender -->
+            <div>
+                <label for="gender">How do you gender identify?:</label>
+                <span id="gender"></span>
+            </div>
+            <!-- DOB -->
+            <div>
+                <label for="DOB">Date of Birth:</label>
+                <span id="dob"></span>
+            </div>
+            <div class="buttons">
+                <input id="back-button" class="button" type="submit" value="Back" />
+                <a href="edit-prof.html">Edit</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <iframe class="footer" src="footer.html" width="100%"></iframe>
+    </footer>
+
+    <!-- <script>
+        //profiles changed back to obj
+        profiles = JSON.parse(window.localStorage.profiles);
+        //Check if logged in
+        window.onload = function (e) {
+            if (window.sessionStorage.loggedIn !== "true") {
+                alert("You need to be logged in first.");
+                window.location.href = "login.3.html";
+            }
+            let profileIndex = findProfile(profiles);
+            loadProfile(profiles[profileIndex]);
+        };
+        function findProfile(profiles) {
+
+            for (let i = 0; i < profiles.length; i++) {
+                if (profiles[i].email === window.sessionStorage.email) {
+                    return i;
+                }
+            }
+        }
+        var loadProfile = function (profiles) {
+
+            const profile = {
+                firstName: profiles.firstName,
+                lastName: profiles.lastName,
+                alias: profiles.alias,
+                email: profiles.email,
+                gender: profiles.gender,
+                dob: profiles.dob,
+                password: profiles.password
+            };
+
+            document.getElementById("first-name").innerHTML = profile.firstName;
+            document.getElementById("last-name").innerHTML = profile.lastName;
+            document.getElementById("alias").innerHTML = profile.alias;
+            document.getElementById("email").innerHTML = profile.email;
+            document.getElementById("gender").innerHTML = profile.gender;
+            document.getElementById("dob").innerHTML = profile.dob;
+        }
+    </script> -->
+</body>
+
+</html>
